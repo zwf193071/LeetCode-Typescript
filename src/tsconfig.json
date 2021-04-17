@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "commonjs", // 指定生成哪个模块系统代码
+        "target": "es2017", // 编译的目标是什么版本的
+        "noImplicitAny": true, // 是否默认禁用 any
+        "outDir": "./dist",
+        "sourceMap": true,
+        "lib": [
+            "es2015",
+            "es2016",
+            "es2017",
+            "dom"
+        ]
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}

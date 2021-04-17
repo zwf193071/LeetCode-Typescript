@@ -1,0 +1,38 @@
+{
+  "name": "leetcode-typescript",
+  "version": "1.0.0",
+  "description": "Using typescript to solve LeetCode problems",
+  "scripts": {
+    "test": "yarn mocha"
+  },
+  "mocha": {
+    "colors": true,
+    "recursive": [
+      "src/**/*.test.ts"
+    ],
+    "reporter": [
+      "mochawesome"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  },
+  "author": "LucyZhu",
+  "license": "ISC",
+  "dependencies": {
+    "@types/chai": "^4.2.16",
+    "@types/mocha": "^8.2.2",
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "mochawesome": "^6.2.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/plugin-transform-typescript": "^7.13.0",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/node": "^14.14.41",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  }
+}
