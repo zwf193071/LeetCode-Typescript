@@ -1,16 +1,20 @@
 import { expect } from 'chai'
-import { mergeTwoLists } from './index'
-import { ListNode } from '../../structures/ListNode'
+import { mergeTwoLists, mergeTwoLists1 } from './index'
+import { List2Ints, createLinkedList, createArray } from '../../structures/ListNode'
 
 describe('Merge-Two-Lists', function () {
     describe('mergeTwoLists', function () {
-        // it('l1 = [], l2 = [], should return []', function () {
-        //     const l1 = [new ListNode()]
-        //     const l2 = [new ListNode()]
-        //     expect(mergeTwoLists(l1, l2)).to.deep.equal([])
-        // })
-        // it('l1 = [], l2 = [0], should return [0]', function () {
-        //     expect(mergeTwoLists([], [0])).to.deep.equal([0])
-        // })
+        it('l1 = [], l2 = [], should return []', function () {
+            expect(mergeTwoLists(List2Ints([]), List2Ints([]))).to.deep.equal(List2Ints([]))
+        })
+    })
+    describe('mergeTwoLists-1', function () {
+        it('l1 = [], l2 = [0], should return [0]', function () {
+            const l1 = createLinkedList([])
+            const l2 = createLinkedList([0])
+            const result = mergeTwoLists1(l1, l2)
+            const resultArray = createArray(result)
+            expect(resultArray).to.deep.equal([0])
+        })
     })
 })
