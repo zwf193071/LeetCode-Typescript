@@ -7,7 +7,7 @@ export class ListNode {
     }
 }
 // First way to create LinkedList from arrays
-export function List2Ints(nums:Array<number|null>):ListNode {
+export function IntsToList(nums:Array<number|null>):ListNode {
     if (nums.length === 0) return null
     let l = new ListNode()
     let t = l
@@ -19,7 +19,7 @@ export function List2Ints(nums:Array<number|null>):ListNode {
 }
 
 // Another way to create LinkedList from arrays
-export function createLinkedList(arr: number[]) {
+export function IntsToList1(arr: number[]) {
     if (arr.length === 0) return null
     let head = new ListNode(arr[arr.length - 1])
     for (let i = arr.length - 2; i >= 0; --i) {
@@ -31,7 +31,7 @@ export function createLinkedList(arr: number[]) {
 }
 
 // The way to create an array from the LinkedList
-export function createArray(head: ListNode | null):number[] {
+export function ListToInts(head: ListNode | null):number[] {
     const arr = []
     while (head !== null) {
       arr.push(head.val)
