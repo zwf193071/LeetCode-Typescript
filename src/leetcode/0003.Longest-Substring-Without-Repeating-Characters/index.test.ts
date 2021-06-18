@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { lengthOfLongestSubstring } from './index'
 
-describe('Length-Of-Longest-Substring', function () {
+describe('0003.Length-Of-Longest-Substring', function () {
     describe('lengthOfLongestSubstring', function () {
         it("'abcabcbb' should return 3", function () {
             expect(lengthOfLongestSubstring("abcabcbb")).to.be.equal(3)

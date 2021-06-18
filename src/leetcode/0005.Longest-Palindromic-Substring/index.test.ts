@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { longestPalindrome, longestPalindrome1 } from './index'
 
-describe('Longest-Palindromic-Substring', function () {
+describe('0005.Longest-Palindromic-Substring', function () {
     describe("longestPalindrome--Manacher", function () {
         it('aacabdkacaa should return aca', function () {
             expect(longestPalindrome('aacabdkacaa')).to.be.equal('aca')

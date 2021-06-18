@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { twoSum, twoSum1 } from './index'
 
-describe('Two-Sum', function () {
+describe('0001.Two-Sum', function () {
     describe('twoSum', function () {
         it('[2,7,11,15] 9 should return [0, 1]', function () {
             expect(twoSum([2,7,11,15], 9)).to.deep.equal([0, 1])

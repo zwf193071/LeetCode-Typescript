@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { findMedianSortedArrays } from './index'
 
-describe('Find-Median-Sorted-Arrays', function () {
+describe('0004.Find-Median-Sorted-Arrays', function () {
     describe('findMedianSortedArrays', function () {
         it('nums1 = [1,3], nums2 = [2] should return 2.00000', function () {
             expect(findMedianSortedArrays([1,3], [2])).to.be.equal(2)
